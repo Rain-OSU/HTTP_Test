@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction to HTML</title>
+        <style>
+            body {
+                background-image: url(space.jfif);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+<p style= "color:hotpink; text-align:center; font-size: 50px;"><b>"See You, Space Cowboy"</b></p>
+   <p style= "color:aliceblue; text-align: right; font-size: 20px;"> -Andy from Cowboy Bebop
+</p>
+<table>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+    <caption>X v. Y</caption>
+    <tr>
+        <th></th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+    </tr>
+
+    <tr>
+        <td>X</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Y</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+</table>
+
+    <table style="width:auto;">
+        <caption>My Info</caption>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Email</th>
+        </tr>
+        <tr>
+            <td>Rain</td>
+            <td>rosullivan@mail.bradley.edu</td>
+            <td>19rosullivan@gmail.com</td>
+        </tr>
+    </table>
+    <table style="width: auto;">
+        <caption>My Info V2</caption>
+        <tr>
+            <th>Name</th>
+            <td>Rain</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Email</th>
+            <td>rosullivan@mail.bradley.edu</td>
+        </tr>
+        <tr>
+            <td>19rosullivan@gmail.com</td>
+        </tr>
+    </table>
+</p>
+<p>Test List</p>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+<head>
+    <script>
+        function fieldvalidation(){
+            var msg = document.forms["Form"]["msg"].value;
+            if(msg=="") {
+                alert("No message input")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="Form" method="GET" onsubmit="return fieldvalidation()">
+        <label for="msg">Message</label>
+        <input type="text" name="msg" placeholder="Write message">
+        <input type="submit">
+    </form>
+</body>
+
+
+
+</html>
